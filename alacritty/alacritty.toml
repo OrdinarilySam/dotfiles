@@ -1,0 +1,37 @@
+import = ["/Users/sdm/.config/alacritty/catppuccin/catppuccin-macchiato.toml"]
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 17.0
+offset = { x = 0, y = 0 }
+
+[font.normal]
+family = "MonoLisa Nerd Font"
+style = "Regular"
+
+[mouse]
+hide_when_typing = false
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.85
+blur = true
+
+[window.padding]
+x = 20
+y = 20
+
+[shell]
+program = "/bin/zsh"
+
