@@ -4,6 +4,7 @@ vim.g.maplocalleader = ' '
 
 vim.opt.backspace = '2'
 
+
 -- transparency
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
@@ -38,4 +39,9 @@ vim.opt.softtabstop = 2
 vim.opt.shiftround = true
 vim.opt.smartindent = true
 
+-- Keybinds
+vim.keymap.set("n", "<leader>nh", ":noh<CR>")
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>gk", ":bprev<CR>")
+vim.keymap.set("n", "<leader>gl", ":bnext<CR>")
 

@@ -10,7 +10,7 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-          "lua_ls", "tsserver", "svelte", "emmet_ls"
+          "lua_ls", "tsserver", "svelte", "emmet_ls", "rust_analyzer"
         },
 			})
 		end,
@@ -29,6 +29,9 @@ return {
 				capabilities = capabilities,
 			})
       lspconfig.svelte.setup({
+        capabilities = capabilities,
+      })
+      lspconfig.rust_analyzer.setup({
         capabilities = capabilities,
       })
       -- lspconfig.emmet_ls.setup({
