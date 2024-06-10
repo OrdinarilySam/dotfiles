@@ -3,9 +3,18 @@
 !.gitignore
 
 # whitelist specific directories
-!/tmux
-!/nvim
-!/skhd
-!/yabai
-!/alacritty
+!tmux/
+!tmux/**
+
+!nvim/
+!nvim/**
+
+!skhd/
+!skhd/**
+
+!yabai/
+!yabai/**
+
+!alacritty/
+!alacritty/**
 
